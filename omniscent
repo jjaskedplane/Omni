@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Omni Shop</title>
+<style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; }
+    header { background: #222; color: white; padding: 20px; text-align: center; }
+    .container { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; padding: 20px; }
+    .item { background: white; padding: 15px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align: center; }
+    .item img { width: 100%; height: 180px; object-fit: cover; border-radius: 10px; }
+    .item button { padding: 10px 15px; background: #00994d; color: white; border: none; border-radius: 8px; cursor: pointer; margin-top: 10px; }
+    .item button:hover { background: #007a3f; }
+</style>
+</head>
+
+<body>
+<header>
+    <h1>Omni</h1>
+    <p>Snacks • Chips • Beignets • Comic Rentals • Juice (maybe) • Movies & Shows (future)</p>
+</header>
+
+<div class="container">
+
+    <div class="item">
+        <img src="https://via.placeholder.com/300" alt="Snacks">
+        <h3>Snacks</h3>
+        <p>Various tasty snacks.</p>
+        <button onclick="order('Snacks')">Order</button>
+    </div>
+
+    <div class="item">
+        <img src="https://via.placeholder.com/300" alt="Chips">
+        <h3>Chips</h3>
+        <p>Different flavors available.</p>
+        <button onclick="order('Chips')">Order</button>
+    </div>
+
+    <div class="item">
+        <img src="https://via.placeholder.com/300" alt="Beignets">
+        <h3>Beignets</h3>
+        <p>Fresh & sweet.</p>
+        <button onclick="order('Beignets')">Order</button>
+    </div>
+
+    <div class="item">
+        <img src="https://via.placeholder.com/300" alt="Comics">
+        <h3>Comic Rentals</h3>
+        <p>Rent your favorite comics.</p>
+        <button onclick="order('Comic Rental')">Order</button>
+    </div>
+
+    <div class="item">
+        <img src="https://via.placeholder.com/300" alt="Juice">
+        <h3>Juice (Soon)</h3>
+        <p>Coming soon!</p>
+        <button onclick="order('Juice (Coming Soon)')">Order</button>
+    </div>
+
+    <div class="item">
+        <img src="https://via.placeholder.com/300" alt="Movies & Shows">
+        <h3>Movies & Shows</h3>
+        <p>Future streaming service.</p>
+        <button onclick="order('Movie/Show Access (Future)')">Order</button>
+    </div>
+
+</div>
+
+<script>
+function order(product) {
+    const email = "your-email@example.com"; 
+    const subject = encodeURIComponent("Order Request: " + product);
+    const body = encodeURIComponent("Hello, I want to order/rent:\n\n" + product + "\n\nMy Name:\nMy Location:\nMy Phone Number:");
+    window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+}
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Omni Shop</title>
+<style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; }
+    header { background: #222; color: white; padding: 20px; text-align: center; }
+    .container { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; padding: 20px; }
+    .item { background: white; padding: 15px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align: center; }
+    .item img { width: 100%; height: 180px; object-fit: cover; border-radius: 10px; }
+    .item button { padding: 10px 15px; background: #00994d; color: white; border: none; border-radius: 8px; cursor: pointer; margin-top: 10px; }
+    .item button:hover { background: #007a3f; }
+</style>
+</head>
+
+<body>
+<header>
+    <h1>Omni</h1>
+    <p>Snacks • Chips • Beignets • Comic Rentals • Juice (maybe) • Movies & Shows (future)</p>
+</header>
+
+<div class="container">
+
+    <div class="item">
+        <img src="https://via.placeholder.com/300" alt="Snacks">
+        <h3>Snacks</h3>
+        <p>Various tasty snacks.</p>
+        <button onclick="order('Snacks')">Order</button>
+    </div>
+
+    <div class="item">
+        <img src="https://via.placeholder.com/300" alt="Chips">
+        <h3>Chips</h3>
+        <p>Different flavors available.</p>
+        <button onclick="order('Chips')">Order</button>
+    </div>
+
+    <div class="item">
+        <img src="https://via.placeholder.com/300" alt="Beignets">
+        <h3>Beignets</h3>
+        <p>Fresh & sweet.</p>
+        <button onclick="order('Beignets')">Order</button>
+    </div>
+
+    <div class="item">
+        <img src="https://via.placeholder.com/300" alt="Comics">
+        <h3>Comic Rentals</h3>
+        <p>Rent your favorite comics.</p>
+        <button onclick="order('Comic Rental')">Order</button>
+    </div>
+
+    <div class="item">
+        <img src="https://via.placeholder.com/300" alt="Juice">
+        <h3>Juice (Soon)</h3>
+        <p>Coming soon!</p>
+        <button onclick="order('Juice (Coming Soon)')">Order</button>
+    </div>
+
+    <div class="item">
+        <img src="https://via.placeholder.com/300" alt="Movies & Shows">
+        <h3>Movies & Shows</h3>
+        <p>Future streaming service.</p>
+        <button onclick="order('Movie/Show Access (Future)')">Order</button>
+    </div>
+
+</div>
+
+<script>
+function order(product) {
+    const email = "your-email@example.com"; 
+    const subject = encodeURIComponent("Order Request: " + product);
+    const body = encodeURIComponent("Hello, I want to order/rent:\n\n" + product + "\n\nMy Name:\nMy Location:\nMy Phone Number:");
+    window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+}
+</script>
+
+</body>
+</html>
