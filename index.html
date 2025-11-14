@@ -71,7 +71,7 @@
 function order(product) {
     const email = "jackjeromecarter378@gmail.com"; 
     const subject = encodeURIComponent("Order Request: " + product);
-    const body = encodeURIComponent("Hello, I want to order/rent:\n\n" + product + "\n\nMy Name:\nWhere we should met up:\nMy School Email:");
+    const body = encodeURIComponent("Hello, I want to order/rent:\n\n" + product + "\n\nMy Name:\nWhere we should met up:\nMy School Email(This is where you say which place in the school campus would be  good for you):");
     window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
 }
 </script>
